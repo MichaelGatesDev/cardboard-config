@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+
+    "rootDir": "src",
+    "outDir": "dist",
+
+    "module": "commonjs",
+    "composite": true,
+    "target": "es6",
+
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/__tests__/**/*",
+    "__mocks__/**/*"
+  ]
+}

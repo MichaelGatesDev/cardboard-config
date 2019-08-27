@@ -1,0 +1,30 @@
+{
+  "name": "cardboard-config",
+  "description": "A serializable/deserializable configuration helper",
+  "version": "1.0.0",
+  "repository": "https://github.com/MichaelGatesDev/cardboard-config",
+  "author": "michaelgatesdev",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@michaelgatesdev/common": "^1.0.8",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "tslint": "^5.19.0",
+    "typescript": "^3.5.3"
+  }
+}
