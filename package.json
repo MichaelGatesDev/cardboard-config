@@ -11,20 +11,30 @@
   "typescript": {
     "definition": "dist/index.d.ts"
   },
+  "engines": {
+    "node": ">= 10.13 <11"
+  },
   "scripts": {
-    "build": "tsc --build",
-    "test": "jest"
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@michaelgatesdev/common": "^1.0.8",
-    "fs": "^0.0.1-security"
+    "@michaelgatesdev/common": "/home/mgate005/Dev/web/node-libs/common",
+    "fs": "~0.0.1-security"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.15",
     "@types/node": "^12.7.2",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.2.2",
-    "tslint": "^5.19.0",
-    "typescript": "^3.5.3"
+    "jest": "~24.8.0",
+    "prettier": "~1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.3.0",
+    "tslint": "~5.18.0",
+    "tsutils": "~3.14.0",
+    "typescript": "~3.5.0"
   }
 }
