@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import { ConfigBase } from "./configuration";
 
-import { FileUtils } from "@michaelgatesdev/common";
+import { FileUtils } from "@michaelgatesdev/common/src";
 
 export interface ConfigIOResult {
     wasCreated: boolean;

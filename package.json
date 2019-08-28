@@ -22,7 +22,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@michaelgatesdev/common": "/home/mgate005/Dev/web/node-libs/common",
+    "@michaelgatesdev/common": "^1.0.9",
     "fs": "~0.0.1-security"
   },
   "devDependencies": {
