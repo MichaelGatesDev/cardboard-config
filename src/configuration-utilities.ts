@@ -1,7 +1,6 @@
-import * as fs from "fs";
+import { FileUtils } from "@michaelgatesdev/common";
+import { promises as fsPromises } from "fs";
 import { ConfigBase } from "./configuration";
-
-import { FileUtils } from "@michaelgatesdev/common/src";
 
 export interface ConfigIOResult {
     wasCreated: boolean;
@@ -26,8 +25,8 @@ export class ConfigurationUtilities {
     public static async load<T extends ConfigBase>(base: new (...args: any[]) => T, baseArgs: any[]): Promise<ConfigBase> {
         if (baseArgs.length < 1) { throw new Error("No path argument was passed to the constructor"); }
         const path = baseArgs[0];
-        if (await FileUtils.checkExists(path)) { throw new Error(`Can not load configuration because it does not exist: ${path}`); }
-        const rawData = await fs.promises.readFile(path, {
+        if (await !FileUtils.checkExists(path)) { throw new Error(`Can not load configuration because it does not exist: ${path}`); }
+        const rawData = await fsPromises.readFile(path, {
             encoding: "utf8",
         });
         const data = JSON.parse(rawData);
