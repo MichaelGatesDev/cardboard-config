@@ -1,4 +1,4 @@
-import { FileUtils } from "@michaelgatesdev/common";
+import { FileUtils } from "@michaelgatesdev/common-io";
 import { promises as fsPromises } from "fs";
 import { ConfigBase } from "./configuration";
 

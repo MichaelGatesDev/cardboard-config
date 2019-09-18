@@ -1,7 +1,7 @@
 {
   "name": "cardboard-config",
   "description": "A serializable/deserializable configuration helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/MichaelGatesDev/cardboard-config",
   "author": "michaelgatesdev",
   "license": "MIT",
@@ -14,9 +14,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">= 10.13 <11"
-  },
   "scripts": {
     "clean": "rimraf coverage dist tmp tsconfig.tsbuildinfo",
     "build": "tsc --build",
@@ -25,7 +22,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@michaelgatesdev/common": "~1.0.12",
+    "@michaelgatesdev/common": "1.1.2",
+    "@michaelgatesdev/common-io": "^1.0.1",
     "fs": "~0.0.1-security",
     "tslib": "^1.10.0"
   },

@@ -1,4 +1,4 @@
-import { FileUtils } from "@michaelgatesdev/common";
+import { FileUtils } from "@michaelgatesdev/common-io";
 import { ConfigBase } from "../configuration";
 import { ConfigurationUtilities } from "../configuration-utilities";
 
